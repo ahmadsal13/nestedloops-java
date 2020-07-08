@@ -2,36 +2,23 @@ public class Main {
 
   public static void main(String[] args) {
 
-    for (int i = 0; i < 5; i++) {
-      System.out.println("It's so freaking cold outside!");
+    int i = 5;
+
+    switch (i) {
+
+      case 0:
+        System.out.println("Zero");
+        break;
+      case 1:
+        System.out.println("One");
+        break;
+      case 3:
+        System.out.println("Three");
+        break;
+      default:
+        System.out.println("Wtf man what is going on in there!");
+        break;
     }
-
-    System.out.println("----------");
-
-    String[] colors = { "Red", "Blue", "Green" };
-
-    for (int i = 0; i < 3; i++) {
-      System.out.println(colors[i]);
-    }
-
-    System.out.println("----------");
-
-    String[][] fancyColors = { { "Red", "Blue", "Green" }, { "Cyan", "Magenta", "Turqiouse" } };
-
-    for (int row = 0; row < 2; row++) {
-      for (int column = 0; column < 3; column++) {
-        System.out.println(fancyColors[row][column]);
-      }
-    }
-
-    System.out.println("----------");
-
-    for (int i = 0; i < 5; i++) {
-      for (int j = 0; j < 10; j++) {
-        System.out.println("i: " + i + ", j: " + j);
-      }
-    }
-    // this is a computer program
+    // time to begin the test
   }
-
 }
