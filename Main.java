@@ -1,20 +1,21 @@
+import java.util.ArrayList;
+
 public class Main {
 
   public static void main(String[] args) {
 
-    String name = "Billy Bob Joe";
+      String a = null;
+      ArrayList b = null;
 
-    System.out.println("Name: " + name);
-    System.out.println("Uppercase: " + name.toUpperCase());
-    System.out.println("Lowercase:" + name.toLowerCase());
-    System.out.println("First Char:" + name.charAt(0));
-    System.out.println(name.length());
-    System.out.println("Last char:" + name.charAt(12));
-    System.out.println("Substring" + name.substring(10, 13));
-
+      if(a == null) {
+        System.out.println("is null");
+      }
   }
-
 }
 
+// null basically means nothing
 
-  // string methods 
+// null only works with strings and array list
+
+
+// time to learn about the null keyword in java
