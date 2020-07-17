@@ -1,21 +1,19 @@
-import java.util.ArrayList;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 public class Main {
 
   public static void main(String[] args) {
 
-      String a = null;
-      ArrayList b = null;
+        Date currentDate = new Date();
+        System.out.println(currentDate);
 
-      if(a == null) {
-        System.out.println("is null");
-      }
-  }
+        SimpleDateFormat timeFormat = new SimpleDateFormat("hh:mm:ss");
+        System.out.println(timeFormat.format(currentDate));
+
+
+        SimpleDateFormat dateFormat = new SimpleDateFormat("MM/dd/yyyy");
+        System.out.println(dateFormat.format(currentDate));
+     }
+    // how to get the time in Java
 }
-
-// null basically means nothing
-
-// null only works with strings and array list
-
-
-// time to learn about the null keyword in java
