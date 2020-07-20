@@ -1,19 +1,32 @@
-import java.text.SimpleDateFormat;
-import java.util.Date;
-
 public class Main {
 
   public static void main(String[] args) {
-
-        Date currentDate = new Date();
-        System.out.println(currentDate);
-
-        SimpleDateFormat timeFormat = new SimpleDateFormat("hh:mm:ss");
-        System.out.println(timeFormat.format(currentDate));
-
-
-        SimpleDateFormat dateFormat = new SimpleDateFormat("MM/dd/yyyy");
-        System.out.println(dateFormat.format(currentDate));
-     }
-    // how to get the time in Java
+    int day = 100;
+    switch (day) {
+      case 1:
+        System.out.println("Sunday");
+        break;
+      case 2:
+        System.out.println("Monday");
+        break;
+      case 3:
+        System.out.println("Tuesday");
+        break;
+      case 4:
+        System.out.println("Wenesday");
+        break;
+      case 5:
+        System.out.println("Thursday");
+        break;
+      case 6:
+        System.out.println("Friday");
+        break;
+      case 7:
+        System.out.println("Saturday");
+        break;
+      default: 
+        System.out.println("Not a valid day!!!");
+    }
+  }
+  // how to get the time in Java
 }
