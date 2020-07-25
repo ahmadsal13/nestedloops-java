@@ -1,14 +1,22 @@
 public class Main {
 
   public static void main(String[] args) {
+    try {
+      int[] a = { 4 };
+      System.out.println(a[1]);
+    } catch (NullPointerException e) {
+      System.out.println("man you are really freaking stupid you know you can not do this!");
+    }
 
-    String[] fruits = new String[3];
-    fruits[0] = "Mango";
-    fruits[1] = "Apple";
-    fruits[2] = "Banana";
-    System.out.println(fruits[1]);
+    catch (ArrayIndexOutOfBoundsException e) {
+      System.out.println("even worse");
+    }
+
+    catch (Exception e) {
+      System.out.println("still stupid");
+    }
+
   }
-  // ArrayListProjects
 
-  // testing source changes
+  // try catch java examples
 }
