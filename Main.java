@@ -1,22 +1,18 @@
 public class Main {
 
   public static void main(String[] args) {
-    try {
-      int[] a = { 4 };
-      System.out.println(a[1]);
-    } catch (NullPointerException e) {
-      System.out.println("man you are really freaking stupid you know you can not do this!");
-    }
+    countBackword(14);
+  }
 
-    catch (ArrayIndexOutOfBoundsException e) {
-      System.out.println("even worse");
-    }
-
-    catch (Exception e) {
-      System.out.println("still stupid");
+  public static void countBackword(int n) {
+    if (n == 0) {
+      System.out.println("Nice job!");
+    } else {
+      System.out.println(n);
+      n--;
+      countBackword(n);
     }
 
   }
-
-  // try catch java examples
+  // Java Intermediate 1
 }
